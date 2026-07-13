@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Application logs
+*.log
+
+# Matplotlib cache
+.mplcache/
+
+# Output images
+img/*.png
+
+# Model artifacts
+model/digit_classifier.keras
+
+# IDE/editor folders
+.vscode/
+.idea/
