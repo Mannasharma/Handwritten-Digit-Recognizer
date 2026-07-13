@@ -1,32 +1,46 @@
 # Digit Recogniser
 
-A simple MNIST digit recognizer using TensorFlow and a Tkinter drawing app.
+A simple handwritten digit recognition project using TensorFlow, MNIST, and a Tkinter drawing app.
 
-## Project files
+## Overview
 
-- `train.py` — trains a CNN on the MNIST dataset and saves the model.
-- `app.py` — Tkinter GUI for drawing digits and predicting them with the saved model.
-- `predict.py` — sample script that loads the saved model and evaluates a test image.
-- `requirements.txt` — Python package dependencies.
+This project includes:
 
-## Requirements
+- `train.py` — trains a convolutional neural network (CNN) on the MNIST dataset and saves the trained model.
+- `app.py` — a Tkinter GUI where you can draw a digit and get a live prediction.
+- `predict.py` — a sample script that loads the saved model and predicts a digit from the MNIST test set.
+- `requirements.txt` — Python dependencies required to run the project.
+
+## Features
+
+- MNIST digit classification using a CNN
+- Local model training with TensorFlow
+- Simple drawing-based GUI for digit prediction
+- Sample prediction script for validation
+
+## Prerequisites
 
 - Python 3.11+ recommended
-- `tensorflow`
-- `numpy`
-- `Pillow`
-- `matplotlib`
-- `tkinter` (system package)
+- `tkinter` installed on your system
 
-Install dependencies with:
+## Dependencies
+
+Install Python dependencies with:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
+The project requires:
+
+- `tensorflow`
+- `numpy`
+- `Pillow`
+- `matplotlib`
+
 ## Setup
 
-1. Create a virtual environment (optional but recommended):
+1. Create and activate a virtual environment (recommended):
 
 ```bash
 python -m venv venv
@@ -39,29 +53,29 @@ source venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-## Train the model
+## Training
 
-Run the training script to download MNIST, train the CNN, and save the model:
+Train the model using:
 
 ```bash
 python train.py
 ```
 
-This will create `model/digit_classifier.keras`.
+This downloads the MNIST dataset, trains the CNN, evaluates it, and saves the model to `model/digit_classifier.keras`.
 
-## Run the GUI app
+## Run the GUI App
 
-Start the drawing app with:
+Start the app with:
 
 ```bash
 python app.py
 ```
 
-Draw a digit in the window and click **Predict**.
+Use the drawing canvas, write a digit, and click **Predict** to see the model result.
 
 ## Run the prediction sample
 
-To test the saved model with a sample MNIST image:
+Test the saved model on a sample MNIST image:
 
 ```bash
 python predict.py
@@ -69,5 +83,24 @@ python predict.py
 
 ## Notes
 
-- The project currently ignores the trained model file in Git because model weights can be large. If you want to share the trained model, use Git LFS or provide it separately.
-- `tkinter` is usually installed with Python, but on some systems it must be installed via the OS package manager.
+- The project ignores the `venv/` folder and the trained model file in Git to keep the repository clean.
+- If you want to share the trained model, use Git LFS or provide it as a separate download.
+- No Jupyter Notebook is required for this project.
+
+## Project Structure
+
+```text
+├── app.py
+├── predict.py
+├── requirements.txt
+├── train.py
+├── .gitignore
+├── model/                  # saved TensorFlow model if created locally
+└── venv/                   # ignored virtual environment
+```
+
+## Ready to upload
+
+The project is ready for GitHub upload. The current setup is complete and the README includes all necessary instructions.
+
+
