@@ -81,11 +81,6 @@ Test the saved model on a sample MNIST image:
 python predict.py
 ```
 
-## Notes
-
-- The project ignores the `venv/` folder and the trained model file in Git to keep the repository clean.
-- If you want to share the trained model, use Git LFS or provide it as a separate download.
-- No Jupyter Notebook is required for this project.
 
 ## Project Structure
 
@@ -99,8 +94,6 @@ python predict.py
 └── venv/                   # ignored virtual environment
 ```
 
-## Ready to upload
 
-The project is ready for GitHub upload. The current setup is complete and the README includes all necessary instructions.
 
 
